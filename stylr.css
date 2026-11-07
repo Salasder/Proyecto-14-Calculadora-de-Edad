@@ -1,0 +1,150 @@
+/* Estilos generales */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    background-color: #f7f3fc;
+    margin: 0;
+    padding: 30px 15px;
+    min-height: 100vh;
+}
+
+
+/* Contenedor principal */
+
+.encabezado {
+    width: 100%;
+    max-width: 550px;
+    margin: 30px auto;
+    padding: 30px;
+    border: 2px solid blueviolet;
+    border-radius: 20px;
+    background-color: white;
+}
+
+
+/* Título */
+
+h1 {
+    font-size: clamp(24px, 5vw, 30px);
+    color: blueviolet;
+    margin-top: 0;
+}
+
+
+/* Etiqueta */
+
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+
+/* Campo de fecha */
+
+#nacimiento {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid #b9a0d5;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: white;
+}
+
+
+/* Botón */
+
+button {
+    border: none;
+    border-radius: 25px;
+    background-color: blueviolet;
+    padding: 10px 20px;
+    color: white;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6525a5;
+}
+
+
+/* Mensajes */
+
+#mensaje {
+    color: red;
+}
+
+#edad-calculada {
+    display: block;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+
+/* Calendario Flatpickr */
+
+.flatpickr-calendar {
+    width: 307px;
+    max-width: calc(100vw - 20px);
+    font-size: 14px;
+    box-shadow: 0 5px 20px rgba(75, 35, 110, 0.15);
+    border-radius: 10px;
+}
+
+.flatpickr-calendar.open {
+    z-index: 9999;
+}
+
+.flatpickr-months .flatpickr-month {
+    height: 40px;
+}
+
+.flatpickr-current-month {
+    font-size: 135%;
+}
+
+.flatpickr-prev-month svg,
+.flatpickr-next-month svg {
+    width: 14px;
+    height: 14px;
+}
+
+.flatpickr-day.selected,
+.flatpickr-day.startRange,
+.flatpickr-day.endRange {
+    background: blueviolet;
+    border-color: blueviolet;
+}
+
+.flatpickr-day.selected:hover {
+    background: #6525a5;
+    border-color: #6525a5;
+}
+
+
+/* Adaptación a celulares */
+
+@media (max-width: 480px) {
+    body {
+        padding: 15px 10px;
+    }
+    .encabezado {
+        padding: 22px 18px;
+        margin: 15px auto;
+    }
+    label {
+        font-size: 15px;
+    }
+    #edad-calculada {
+        font-size: 18px;
+    }
+}

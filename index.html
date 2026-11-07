@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora de edad</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <link rel="stylesheet" href="stylr.css">
+</head>
+
+<body>
+
+    <main class="encabezado">
+
+        <h1>Calculadora de edad</h1>
+
+        <label for="nacimiento">
+            Introduzca una fecha para calcular la edad correspondiente:
+        </label>
+
+        <input type="text" id="nacimiento" placeholder="Selecciona tu fecha de nacimiento" autocomplete="off">
+
+        <button type="button" id="boton-calcular">
+            Calcular
+        </button>
+
+        <p id="mensaje"></p>
+
+        <span id="edad-calculada"></span>
+
+    </main>
+
+    <!-- Primero se carga Flatpickr -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <!-- Después se carga el idioma español -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/es.js"></script>
+
+    <!-- Después se carga Luxon -->
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3/build/global/luxon.min.js"></script>
+
+    <!-- Finalmente nuestro JavaScript -->
+    <script src="javascript.js"></script>
+
+</body>
+
+</html>
